@@ -250,6 +250,10 @@
 				<data>BwCbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
 			<dict>
@@ -700,6 +704,23 @@
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
+			<dict>
+				<key>Base</key>
+				<string>__Z18e1000_set_mac_typeP8e1000_hw</string>
+				<key>Comment</key>
+				<string>I225-V patch</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>8hUAAA==</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleIntelI210Ethernet
+</string>
+				<key>MinKernel</key>
+				<string>19.0.0</string>
+				<key>Replace</key>
+				<data>8xUAAA==</data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -717,8 +738,6 @@
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
-			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
@@ -732,7 +751,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -808,8 +827,6 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BootProtect</key>
-			<string>Bootstrap</string>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
@@ -872,13 +889,13 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 agdpmod=ignore</string>
+				<string>-v keepsyms=1 alcid=1</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
-				<string>en-US:0</string>
+				<data></data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1058,6 +1075,8 @@
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
 			<false/>
+			<key>ForceResolution</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1096,8 +1115,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
