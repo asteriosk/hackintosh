@@ -4,4 +4,5 @@
 ._EFI*
 .fseventsd
 EFI/._*
-
+EFI/OC/Drivers/._*
+EFI/OC/Tools/._*
