@@ -1,0 +1,7 @@
+*.DS_Store
+.Spotlight*	
+.Trashes/
+._EFI*
+.fseventsd
+EFI/._*
+
