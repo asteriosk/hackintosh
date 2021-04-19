@@ -15,43 +15,43 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "_UIAC", 0)
                       "HS05", Package()
                       {
                           "name", Buffer() { "HS05" },
-                          "UsbConnector", 0,
+                          "UsbConnector", 3,
                           "port", Buffer() { 0x05, 0x00, 0x00, 0x00 },
                       },
                       "HS06", Package()
                       {
                           "name", Buffer() { "HS06" },
-                          "UsbConnector", 0,
+                          "UsbConnector", 3,
                           "port", Buffer() { 0x06, 0x00, 0x00, 0x00 },
                       },
                       "HS07", Package()
                       {
                           "name", Buffer() { "HS07" },
-                          "UsbConnector", 0,
+                          "UsbConnector", 3,
                           "port", Buffer() { 0x07, 0x00, 0x00, 0x00 },
                       },
                       "HS08", Package()
                       {
                           "name", Buffer() { "HS08" },
-                          "UsbConnector", 0,
+                          "UsbConnector", 3,
                           "port", Buffer() { 0x08, 0x00, 0x00, 0x00 },
                       },
                       "HS09", Package()
                       {
                           "name", Buffer() { "HS09" },
-                          "UsbConnector", 0,
+                          "UsbConnector", 3,
                           "port", Buffer() { 0x09, 0x00, 0x00, 0x00 },
                       },
                       "HS10", Package()
                       {
                           "name", Buffer() { "HS10" },
-                          "UsbConnector", 0,
+                          "UsbConnector", 3,
                           "port", Buffer() { 0x0A, 0x00, 0x00, 0x00 },
                       },
                       "HS11", Package()
                       {
                           "name", Buffer() { "HS11" },
-                          "UsbConnector", 0,
+                          "UsbConnector", 255,
                           "port", Buffer() { 0x0B, 0x00, 0x00, 0x00 },
                       },
                       "HS12", Package()
